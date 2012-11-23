@@ -4,7 +4,7 @@
 DigitalOut led1(LED1);
 DigitalOut led2(LED2);
  
-void led2_thread(void const *argument) {
+void led2_thread(void const *args) {
     while (true) {
         led2 = !led2;
         Thread::wait(1000);
